@@ -11,7 +11,4 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/consumo")
 public class RegistroConsumoController {
 
-    @PostUpdate
-
-
 }
