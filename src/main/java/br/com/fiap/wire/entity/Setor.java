@@ -12,6 +12,8 @@ public class Setor {
     @Column(name = "id_setor")
     private long id;
 
+    private String responsavel;
+
     private String nome;
 
     @OneToMany(mappedBy = "setor", cascade = CascadeType.ALL)
@@ -42,4 +44,13 @@ public class Setor {
     public void setEquipamentos(List<Equipamento> equipamentos) {
         this.equipamentos = equipamentos;
     }
+
+    public String getResponsavel() {
+        return responsavel;
+    }
+
+    public void setResponsavel(String responsavel) {
+        this.responsavel = responsavel;
+    }
+
 }
